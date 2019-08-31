@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container w-100 h-100">
+        <!-- <element-direc> </element-direc>  //element 
+        <div attribute-direc=" "></div>         //attribute
+        <div class="class-direc"></div>         //class    -->
+
+        <header class="nav w-100 h-10 d-flex flex-row">
+            <div ng-controller="homeCtrl" class="home-ctrl">{{homePage | uppercase}}</div>
+            <div ng-controller="contactCtrl" class="contact-ctrl">{{contactPage | uppercase}}</div>
+            <div ng-controller="emailCtrl" class="email-ctrl">{{emailPage | uppercase}}</div>
+        </header>
+    </div>
+    <script src="js/angular.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/homeCtrl.js"></script>
+    <script src="js/contactCtrl.js"></script>
+    <script src="js/emailCtrl.js"></script>
+</body>
+
+</html>
